@@ -45,6 +45,27 @@
 <body>
     <div class="app">
         <h1>Go-Obat</h1>
+				<?php
+		 $db_host = "co-obat.com";
+		$db_user = "goobat_apps";
+		$db_pass = "sp3ktr4@c3m4s";
+		$db_name = "goobat_apps";
+
+		$connection = mysqli_connect($db_host, $db_user, $db_pass);
+		mysql_select_db($db_name, $connection);
+		 
+			if(!=mysql_error())
+			{
+				
+		var_dump('bisa ');die();
+			}
+			else
+			{
+		var_dump('ga bisa');die();
+
+			}
+
+		?>
 							<table id="example" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
