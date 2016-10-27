@@ -43,9 +43,11 @@
 </head>
 
 <body>
-
-        <h1>Go-Obataaaa</h1>
-				<?php
+    <div class="app">
+        <h1>Go-Obat h1</h1>
+							
+	
+					<?php
 		 $db_host = "co-obat.com";
 		$db_user = "goobat_apps";
 		$db_pass = "sp3ktr4@c3m4s";
@@ -56,21 +58,21 @@
 		 
 			if(!=mysql_error())
 			{
-				$bisa = "bisa";
-		
+				$bisa = bisa;
+		var_dump('bisa ');die();
 			}
 			else
 			{
-		$bisa = "gabisa";
+		$bisaa = "gabisa";
 
 			}
-
 		?>
-		
+	
         <div id="deviceready" class="blink">
-            <p class="event listening">Go-Obat <?php echo $bisa;?></p>
-            <p class="event received">Device is Ready</p>
+            <p class="event listening">Go-Obat class <?php echo $bisa;?></p>
+            <p class="event received">Device is Ready <?php echo $bisa;?></p>
         </div>
+    </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
