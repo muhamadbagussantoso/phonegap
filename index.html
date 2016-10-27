@@ -56,18 +56,19 @@
 		 
 			if(!=mysql_error())
 			{
-				
-		var_dump('bisa ');die();
+				$bisa = "bisa";
+		
 			}
 			else
 			{
-		var_dump('ga bisa');die();
+		$bisa = "gabisa";
 
 			}
 
 		?>
+		
         <div id="deviceready" class="blink">
-            <p class="event listening">Go-Obat</p>
+            <p class="event listening">Go-Obat <?php echo $bisa;?></p>
             <p class="event received">Device is Ready</p>
         </div>
     <script type="text/javascript" src="cordova.js"></script>
