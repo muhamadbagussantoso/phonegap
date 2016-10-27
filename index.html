@@ -46,28 +46,7 @@
     <div class="app">
         <h1>Go-Obat h1</h1>
 							
-	
-					<?php
-		 $db_host = "co-obat.com";
-		$db_user = "goobat_apps";
-		$db_pass = "sp3ktr4@c3m4s";
-		$db_name = "goobat_apps";
 
-		$connection = mysqli_connect($db_host, $db_user, $db_pass);
-		mysql_select_db($db_name, $connection);
-		 
-			if(!=mysql_error())
-			{
-				$bisa = bisa;
-		var_dump('bisa ');die();
-			}
-			else
-			{
-		$bisaa = "gabisa";
-
-			}
-		?>
-	
         <div id="deviceready" class="blink">
             <p class="event listening">Go-Obat class <?php echo $bisa;?></p>
             <p class="event received">Device is Ready <?php echo $bisa;?></p>
@@ -76,6 +55,15 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
+			MySql.Execute(
+			"go-obat.com", 
+			"goobat_apps", 
+			"password", 
+			"goobat_apps", 
+			"select * from Users", 
+			function (data) {
+				console.log(data)
+		});
         app.initialize();
     </script>
 </body>
